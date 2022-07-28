@@ -16,7 +16,11 @@ use App\Http\Controllers\IntervieweeTypesController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('/auth/login');
+});
+
+Route::get('/user', function () {
+    return view('/components/user');
 });
 
 Route::get('/interviewee', function () {
